@@ -72,10 +72,8 @@ for (i = 0; i < fLen; i++) {
 	else if (row[z].value < row[a].value ) {color_data.push({y:row[z].value,color: "#cf0f14"});} 
 	else {color_data.push({y:row[z].value,color: "#f3ff4a"});} 
 }
-var tmpdata = [{y:145,color:"#44cf3a"},{y:288,color:"#44cf3a"},{y:261,color:"#44cf3a"}]
 	
-//var symbol       = row[z5].value
-//var label1  = symbol + ' Quaterly Net Margin and Gross Margin'
+
 console.log('Chart data 1', cell)	
 console.log('Color', color_data)	
  	
@@ -85,7 +83,7 @@ Highcharts.chart('container', {
         type: 'column'
     },
     title: {
-        text: 'Efficiency Optimization by Branch'
+        text: ''
     },
     xAxis: {
         categories: netmargin_data
@@ -106,15 +104,15 @@ Highcharts.chart('container', {
     },
     series: [{
         name: 'Goal',
-        color: 'rgba(165,170,217,1)',
+        color: "#aba9ad",
         data: bm_data,
         pointPadding: 0.3,
-        pointPlacement: -0.2
+        pointPlacement: 0
     }, {
         name: 'Total Count',
         data: color_data,
         pointPadding: 0.4,
-        pointPlacement: -0.2
+        pointPlacement: 0
     }]
 })
  
