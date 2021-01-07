@@ -63,23 +63,16 @@ for(var row of data) {
 	]);
 }
 	
-for(var row of data) {
-	var cell = row[queryResponse.fields.dimensions[3].name]
-	bm_data.push([
-		row[a].value 
-	]);
-}
-
 fLen = grossmargin_data.length;
 var i;
 var color_data = [];
 	
 for (i = 0; i < fLen; i++) {
-	if (grossmargin_data[i] > bm_data [i] ) {color_data.push({y:grossmargin_data[i].valueOf(),color: "#44cf3a"});} 
-	else if (grossmargin_data[i] < bm_data [i] ) {color_data.push({y:grossmargin_data[i].valueOf(),color: "#cf0f14"});} 
-	else {color_data.push({y:grossmargin_data[i].valueOf(),color: "#f3ff4a"});} 
+	if (grossmargin_data[i] > bm_data [i] ) {color_data.push({y:grossmargin_data[i].value,color: "#44cf3a"});} 
+	else if (grossmargin_data[i] < bm_data [i] ) {color_data.push({y:grossmargin_data[i].value,color: "#cf0f14"});} 
+	else {color_data.push({y:grossmargin_data[i].value,color: "#f3ff4a"});} 
 }
-
+var tmpdata = [{y:145,color:"#44cf3a"},{y:288,color:"#44cf3a"},{y:261,color:"#44cf3a"}]
 	
 //var symbol       = row[z5].value
 //var label1  = symbol + ' Quaterly Net Margin and Gross Margin'
@@ -119,7 +112,7 @@ Highcharts.chart('container', {
         pointPlacement: -0.2
     }, {
         name: 'Total Count',
-        data: [{y:145,color:"#44cf3a"},{y:288,color:"#44cf3a"},{y:261,color:"#44cf3a"},],
+        data: color_data,
         pointPadding: 0.4,
         pointPlacement: -0.2
     }]
