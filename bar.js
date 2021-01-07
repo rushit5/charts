@@ -50,10 +50,10 @@ for(var row of data) {
 
 var grossmargin_data = [];
 for(var row of data) {
-	var cell = row[queryResponse.fields.dimensions[2].name]
+	var cell = row[queryResponse.fields.dimensions[0].name]
 	grossmargin_data.push([
-		y:row[z].value
-	       ,color:row[b].value  		      
+	       y     : row[z].value,
+	       color : row[b].value  		      
 	]);
 }
 
