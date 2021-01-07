@@ -68,9 +68,9 @@ var i;
 var color_data = [];
 	
 for (i = 0; i < fLen; i++) {
-	if (row[z].value > row[a].value ) {color_data.push({y:row[z].value,color: "#44cf3a"});} 
-	else if (row[z].value < row[a].value ) {color_data.push({y:row[z].value,color: "#cf0f14"});} 
-	else {color_data.push({y:row[z].value,color: "#f3ff4a"});} 
+	if (grossmargin_data[i] > bm_data [i] ) { color_data.push({y:grossmargin_data[i],color: "#44cf3a"});} 
+	else if (grossmargin_data[i] < bm_data [i] ) { color_data.push({y:grossmargin_data[i],color: "#cf0f14"});}
+	else { color_data.push({y:grossmargin_data[i],color: "#f3ff4a"});} 
 }
 	
 
