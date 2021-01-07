@@ -51,10 +51,10 @@ for(var row of data) {
 var grossmargin_data = [];
 for(var row of data) {
 	var cell = row[queryResponse.fields.dimensions[0].name]
-	grossmargin_data.push([
+	grossmargin_data.push({
 	       y     : row[z].value,
 	       color : row[b].value  		      
-	]);
+	});
 }
 
 var bm_data = [];
