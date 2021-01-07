@@ -30,7 +30,7 @@ x  = config.query_fields.dimensions[0].name;     // activity
 y  = config.query_fields.dimensions[1].name;     // quater
 z  = config.query_fields.dimensions[2].name;     // total count
 a  = config.query_fields.dimensions[3].name;     // BM
-b  = config.query_fields.dimensions[5].name;     // color codes
+b  = config.query_fields.dimensions[4].name;     // color codes
  
 var xdata = [];
 for(var row of data) {
