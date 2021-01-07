@@ -30,6 +30,7 @@ x  = config.query_fields.dimensions[0].name;     // activity
 y  = config.query_fields.dimensions[1].name;     // quater
 z  = config.query_fields.dimensions[2].name;     // total count
 a  = config.query_fields.dimensions[3].name;     // BM
+b  = config.query_fields.dimensions[5].name;     // color codes
  
 var xdata = [];
 for(var row of data) {
@@ -51,7 +52,8 @@ var grossmargin_data = [];
 for(var row of data) {
 	var cell = row[queryResponse.fields.dimensions[2].name]
 	grossmargin_data.push([
-		row[z].value 
+		y:row[z].value
+	       ,color:row[b].value  		      
 	]);
 }
 
@@ -110,7 +112,7 @@ Highcharts.chart('container', {
         pointPlacement: 0
     }, {
         name: 'Total Count',
-        data: color_data,
+        data: grossmargin_data,
         pointPadding: 0.4,
         pointPlacement: 0
     }]
