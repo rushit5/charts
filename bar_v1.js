@@ -32,9 +32,9 @@ z  = config.query_fields.dimensions[2].name;     // BM total count
 a  = config.query_fields.dimensions[3].name;     // color codes
 
  
-var actvty = [];
+var quarter = [];
 for(var row of data) {
-	actvty.push([
+	quarter.push([
 		row[x].value 
 	]);
 }
@@ -70,7 +70,7 @@ Highcharts.chart('container', {
         text: ''
     },
     xAxis: {
-        categories: actvty
+        categories: quarter
     },
     
     legend: {
