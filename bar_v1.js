@@ -60,7 +60,7 @@ for(var row of data) {
 	});
 }
 
-console.log('Color', grossmargin_data)	
+console.log('Color', plot_data)	
  	 
 Highcharts.chart('container', {
     chart: {
