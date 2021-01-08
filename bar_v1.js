@@ -57,7 +57,7 @@ for(var row of data) {
 
 var plot_data = [];
 for(var row of data) {
-	var cell = row[queryResponse.fields.dimensions[3].name]
+	var cell = row[queryResponse.fields.dimensions[0].name]
 	plot_data.push({
 	       y     : row[y].value,
 	       color : row[a].value  		      
@@ -76,7 +76,6 @@ Highcharts.chart('container', {
     xAxis: {
         categories: quarter
     },
-    
     legend: {
         shadow: false
     },
@@ -98,6 +97,7 @@ Highcharts.chart('container', {
         pointPlacement: 0
     }, {
         name: 'Total Count',
+		color: "#44cf3a",
         data: plot_data,
         pointPadding: 0.4,
         pointPlacement: 0
