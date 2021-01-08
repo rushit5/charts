@@ -34,6 +34,7 @@ a  = config.query_fields.dimensions[3].name;     // color codes
  
 var quarter = [];
 for(var row of data) {
+	var cell = row[queryResponse.fields.dimensions[0].name]
 	quarter.push([
 		row[x].value 
 	]);
@@ -41,12 +42,14 @@ for(var row of data) {
 
 var tot_cnt = [];
 for(var row of data) {
+	var cell = row[queryResponse.fields.dimensions[1].name]
 	tot_cnt.push([
 		row[y].value 
 	]);
 }
 var bm_data = [];
 for(var row of data) {
+	var cell = row[queryResponse.fields.dimensions[2].name]
 	bm_data.push([
 		row[z].value 
 	]);
@@ -54,6 +57,7 @@ for(var row of data) {
 
 var plot_data = [];
 for(var row of data) {
+	var cell = row[queryResponse.fields.dimensions[3].name]
 	plot_data.push({
 	       y     : row[y].value,
 	       color : row[a].value  		      
