@@ -78,7 +78,7 @@ google.charts.setOnLoadCallback(drawChart);
         var options = {
 	  legend: {position: 'bottom'},
 	  vAxis: {gridlines:{count:0}},
-          chartArea:{left:60,top:0,width:'90%',height:'75%'},
+          chartArea:{left:60,top:0,width:'100%',height:'80%'},
           chart: {
             title: '',
             subtitle: ''
