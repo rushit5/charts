@@ -63,7 +63,6 @@ for(var row of data) {
 	       color : row[a].value  		      
 	});
 }
-var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
 
 console.log('Color', plot_data)	
 
