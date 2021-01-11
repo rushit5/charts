@@ -60,8 +60,8 @@ for(var row of data) {
 	var cell = row[queryResponse.fields.dimensions[0].name]
 	plot_data.push([ 
            row[x].value,
-	   {row[y].value,'color :'.concat(row[a].value)},
-	   {row[z].value,'color : #aba9ad'}
+	   row[y].value,'color :'.concat(row[a].value),
+	   row[z].value,'color : #aba9ad'
 	]);
 }
 
