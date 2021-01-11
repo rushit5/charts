@@ -3,8 +3,8 @@ create: function(element, config) {
   element.innerHTML = `
 	<style>
 	.sannith {
-	min-width: 800px;
-	height: 500px
+	min-width: 210px;
+	height: 300px
 	}
 	</style>
 	`;
@@ -79,6 +79,7 @@ google.charts.setOnLoadCallback(drawChart);
 	  legend: {position: 'bottom'},
 	  vAxis: {gridlines:{count:0}},
           chartArea:{left:60,top:0,width:'100%',height:'80%'},
+          bar:{groupWidth:'85%'},
           chart: {
             title: '',
             subtitle: ''
