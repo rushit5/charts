@@ -84,7 +84,7 @@ google.charts.setOnLoadCallback(drawChart);
             subtitle: ''
           },
 	  series: {
-            0: { axis: 'Total Count' ,  color : '#92CF50' } 
+            0: { axis: 'Total Count' ,  color : '#92CF50' }, 
             1: { axis: 'Goal' ,  color : '#aba9ad' } 
           }
         };
