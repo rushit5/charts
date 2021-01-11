@@ -82,9 +82,9 @@ google.charts.setOnLoadCallback(drawChart);
           }
         };
 
-        var chart = new google.charts.ColumnChart(document.getElementById('container'));
+        var chart = new google.visualization.ColumnChart(document.getElementById('container'));
 
-        chart.draw(data, google.charts.ColumnChart.convertOptions(options));
+        chart.draw(data,options);
       }
 
 doneRendering();
