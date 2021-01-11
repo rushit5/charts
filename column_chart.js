@@ -78,8 +78,15 @@ google.charts.setOnLoadCallback(drawChart);
         var options = {
           chart: {
             title: '',
-            subtitle: '',
-          }
+            subtitle: ''
+          },
+	  series: {
+            0: { axis: 'Total Count' ,  color : '#92CF50' } 
+            1: { axis: 'Goal' ,  color : '#aba9ad' } 
+          },
+	  legend: {position: 'bottom'},
+	  vAxis: {gridlines:{count:0}},
+          chartArea:{left:60,top:0,width:'90%',height:'75%'}
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('container'));
