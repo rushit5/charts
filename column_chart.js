@@ -3,8 +3,8 @@ create: function(element, config) {
   element.innerHTML = `
 	<style>
 	.sannith {
-	min-width: 210px;
-	height: 350px
+	min-width: 200px;
+	height: 300px
 	}
 	</style>
 	`;
