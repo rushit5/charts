@@ -61,9 +61,9 @@ for(var row of data) {
 	plot_data.push([ 
            row[x].value,
            row[y].value,
-	   color : row[a].value,
+	  'color :'.concat(row[a].value),
 	   row[z].value,
-	   color : '#aba9ad'
+	   'color : #aba9ad'
 	]);
 }
 
