@@ -55,13 +55,16 @@ for(var row of data) {
 	]);
 }
 
-var plot_data = [];
+var plot_data = [['Q','Total Count',{ role: "style" },'Goal',{ role: "style" }]];
 for(var row of data) {
 	var cell = row[queryResponse.fields.dimensions[0].name]
-	plot_data.push({
-	       y     : row[y].value,
-	       color : row[a].value  		      
-	});
+	plot_data.push([ 
+           row[x].value,
+           row[y].value,
+	   row[a].value,
+	   row[z].value,
+	   '#aba9ad'
+	]);
 }
 
 console.log('Color', plot_data)	
@@ -70,18 +73,12 @@ google.charts.load('current', {'packages':['bar']});
 google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses', 'Profit'],
-          ['2014', 1000, 400, 200],
-          ['2015', 1170, 460, 250],
-          ['2016', 660, 1120, 300],
-          ['2017', 1030, 540, 350]
-        ]);
+        var data = google.visualization.arrayToDataTable(plot_data);
 
         var options = {
           chart: {
-            title: 'Company Performance',
-            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+            title: '',
+            subtitle: '',
           }
         };
 
