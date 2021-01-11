@@ -4,7 +4,7 @@ create: function(element, config) {
 	<style>
 	.sannith {
 	min-width: 210px;
-	height: 300px
+	height: 400px
 	}
 	</style>
 	`;
