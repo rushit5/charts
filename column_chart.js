@@ -67,7 +67,7 @@ for(var row of data) {
 console.log('Color', plot_data)	
 
 google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
@@ -85,9 +85,9 @@ google.charts.load('current', {'packages':['bar']});
           }
         };
 
-        //var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+        var chart = new google.charts.Bar(document.getElementById('container'));
 
-        //chart.draw(data, google.charts.Bar.convertOptions(options));
+        chart.draw(data, google.charts.Bar.convertOptions(options));
       }
 
 doneRendering();
