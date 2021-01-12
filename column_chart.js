@@ -83,6 +83,7 @@ google.charts.setOnLoadCallback(drawChart);
 	  vAxis: {gridlines:{count:0}},
           chartArea:{left:60,top:10,width:'100%',height:'65%'},
           bar:{groupWidth:'85%'},
+	  annotations:{alwaysOutside:true},	
 	  series: {
             0: { axis: 'Total Count' ,  color : '#92CF50' }, 
             1: { axis: 'Goal' ,  color : '#aba9ad' } 
