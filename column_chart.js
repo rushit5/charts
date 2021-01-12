@@ -91,7 +91,9 @@ google.charts.setOnLoadCallback(drawChart);
 
         var chart = new google.visualization.ColumnChart(document.getElementById('container'));
 
-        chart.draw(data,options);
+        //chart.draw(data,options);
+	chart.draw(view,options);
+
       }
 
 doneRendering();
