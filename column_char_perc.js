@@ -80,8 +80,8 @@ google.charts.setOnLoadCallback(drawChart);
                       
         var options = {
 	  legend: {position: 'bottom'},
-	  vAxis: {format: 'percent'},
-	  vAxis: {gridlines:{count:0}},
+	  vAxis: {format: 'percent',gridlines:{count:0}},
+	  hAxis: {format: 'percent',gridlines:{count:0}},
           chartArea:{left:40,top:10,width:'100%',height:'55%'},
           bar:{groupWidth:'85%'},
 	  annotations:{alwaysOutside:true},	
