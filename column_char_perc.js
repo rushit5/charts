@@ -75,8 +75,8 @@ google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
         var data = google.visualization.arrayToDataTable(plot_data);
 	var view = new google.visualization.DataView(data);
-        view.setColumns([0, 1,{calc: "stringify",sourceColumn: 1,type: "string",role: "annotation"}
-			,2,3,{calc: "stringify",sourceColumn: 3,type: "string",role: "annotation"},4]);
+        view.setColumns([0, 1,{calc: "stringify",sourceColumn: 1,type: "string",format: 'percent',role: "annotation"}
+			,2,3,{calc: "stringify",sourceColumn: 3,type: "string",format: 'percent',role: "annotation"},4]);
                       
         var options = {
 	  legend: {position: 'bottom'},
