@@ -81,7 +81,7 @@ google.charts.setOnLoadCallback(drawChart);
         var options = {
 	  legend: {position: 'bottom'},
 	  vAxis: {gridlines:{count:0}},
-          chartArea:{left:60,top:10,width:'100%',height:'65%'},
+          chartArea:{left:40,top:10,width:'100%',height:'65%'},
           bar:{groupWidth:'85%'},
 	  annotations:{alwaysOutside:true},	
 	  series: {
