@@ -4,7 +4,7 @@ create: function(element, config) {
 	<style>
 	.sannith {
 	min-width: 200px;
-	height: 300px
+	height: 290px
 	}
 	</style>
 	`;
@@ -74,7 +74,10 @@ google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable(plot_data);
-
+	var view = new google.visualization.DataView(data);
+        view.setColumns([0, 1,{calc: "stringify",sourceColumn: 1,type: "string",role: "annotation"}
+			,2,3,{calc: "stringify",sourceColumn: 3,type: "string",role: "annotation"},4]);
+                      
         var options = {
 	  legend: {position: 'bottom'},
 	  vAxis: {gridlines:{count:0}},
