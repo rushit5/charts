@@ -96,7 +96,7 @@ Highcharts.chart('container', {
         pointPadding: 0.3,
         pointPlacement: 0,
         tooltip: {
-            valueSuffix: ' %'
+            valueSuffix: '%'
         }
     }, {
         name: 'Total Count',
@@ -105,7 +105,7 @@ Highcharts.chart('container', {
         pointPadding: 0.4,
         pointPlacement: 0,
         tooltip: {
-            valueSuffix: ' %'
+            valueSuffix: '%'
         }
     }]
 })
