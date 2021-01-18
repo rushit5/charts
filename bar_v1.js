@@ -84,6 +84,11 @@ Highcharts.chart('container', {
     },
     plotOptions: {
         column: {
+	    dataLabels: {
+                enabled: true,
+                allowOverlap:true,
+                y:10
+            },
             grouping: false,
             shadow: false,
             borderWidth: 0
@@ -93,13 +98,13 @@ Highcharts.chart('container', {
         name: 'Goal',
         color: "#aba9ad",
         data: bm_data,
-        pointPadding: 0.3,
+        pointPadding: 0.2,
         pointPlacement: 0
     }, {
         name: 'Total Count',
-		color: "#44cf3a",
+	color: "#44cf3a",
         data: plot_data,
-        pointPadding: 0.4,
+        pointPadding: 0.3,
         pointPlacement: 0
     }]
 })
