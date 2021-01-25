@@ -73,6 +73,7 @@ Highcharts.chart('container', {
     title: {
         text: ''
     },
+    credits: { enabled: false },
     xAxis: {
         categories: quarter
     },
