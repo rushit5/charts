@@ -93,7 +93,7 @@ Highcharts.chart('container', {
         name: 'Goal',
         color: "#aba9ad",
         data: bm_data,
-        pointPadding: 0.3,
+        pointPadding: 0.2,
         pointPlacement: 0,
         tooltip: {
             valueSuffix: '%'
@@ -102,7 +102,7 @@ Highcharts.chart('container', {
         name: 'Total Count',
 		color: "#44cf3a",
         data: plot_data,
-        pointPadding: 0.4,
+        pointPadding: 0.3,
         pointPlacement: 0,
         tooltip: {
             valueSuffix: '%'
