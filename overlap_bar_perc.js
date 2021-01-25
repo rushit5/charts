@@ -100,7 +100,12 @@ Highcharts.chart('container', {
         }
     }, {
         name: 'Total Count',
-		color: "#44cf3a",
+	color: "#44cf3a",
+	dataLabels: {
+                enabled: true,
+                allowOverlap:true,
+                y:10
+            },
         data: plot_data,
         pointPadding: 0.3,
         pointPlacement: 0,
