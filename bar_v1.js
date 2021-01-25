@@ -73,6 +73,7 @@ Highcharts.chart('container', {
     title: {
         text: ''
     },
+    credits: {enabled: false},
     xAxis: {
         categories: quarter
     },
@@ -84,11 +85,6 @@ Highcharts.chart('container', {
     },
     plotOptions: {
         column: {
-	    dataLabels: {
-                enabled: true,
-                allowOverlap:true,
-                y:10
-            },
             grouping: false,
             shadow: false,
             borderWidth: 0
@@ -103,6 +99,11 @@ Highcharts.chart('container', {
     }, {
         name: 'Total Count',
 	color: "#44cf3a",
+	dataLabels: {
+                enabled: true,
+                allowOverlap:true,
+                y:10
+            },
         data: plot_data,
         pointPadding: 0.3,
         pointPlacement: 0
